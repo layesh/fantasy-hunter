@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+.pytest_cache/
+
+# Local database
+*.db
+
+# Node / Angular
+node_modules/
+dist/
+.angular/
+
+# Editors
+.idea/
+.vscode/
+
+# Env
+.env
+
+.idea

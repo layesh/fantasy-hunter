@@ -1,0 +1,201 @@
+{
+  "season": "2026/27",
+  "note": "Seeded chip-timing prior. 'planned' rows are a pre-season survey of manager intent and are the strongest evidence available before a ball is kicked. 'expert' rows are published recommendations. Nothing here is 'observed' yet — that kind only exists once a season has been played, and it outranks everything below when it arrives. Second-half rows are explicitly lower confidence: the doubles and blanks that drive them are created by cup progression during the season and cannot be known in August.",
+  "priors": [
+    {
+      "chip": "bench_boost", "event": 1, "kind": "planned", "weight": 0.674,
+      "basis": "67.4% of surveyed managers plan their first-half Bench Boost here — with no guaranteed double before GW19, the chip is use-it-or-lose-it and a strong 15 pays immediately.",
+      "source": "Fantasy Football Scout survey of ~3.7k managers, Aug 2026"
+    },
+    {
+      "chip": "bench_boost", "event": 2, "kind": "planned", "weight": 0.301,
+      "basis": "30.1% wait one week for confirmed line-ups before committing. GW1 and GW2 together account for 97.5% of planned first-half Bench Boosts.",
+      "source": "Fantasy Football Scout survey of ~3.7k managers, Aug 2026"
+    },
+    {
+      "chip": "bench_boost", "event": 7, "kind": "expert", "weight": 0.08,
+      "basis": "Alternative for managers who wildcard at GW6 — boost the fresh squad immediately after the international break.",
+      "source": "RotoWire FPL chip strategy 2026/27"
+    },
+    {
+      "chip": "bench_boost", "event": 8, "kind": "expert", "weight": 0.05,
+      "basis": "Same post-wildcard logic, one week later.",
+      "source": "RotoWire FPL chip strategy 2026/27"
+    },
+
+    {
+      "chip": "wildcard", "event": 4, "kind": "planned", "weight": 0.316,
+      "basis": "31.6% plan GW4 — the summer transfer window has closed, so squads are settled and early misfires can be cut.",
+      "source": "Fantasy Football Scout survey of ~3.7k managers, Aug 2026"
+    },
+    {
+      "chip": "wildcard", "event": 6, "kind": "planned", "weight": 0.348,
+      "basis": "34.8% plan GW6, the largest single share — after the three-week international break, with five gameweeks of real data and injury news in hand.",
+      "source": "Fantasy Football Scout survey of ~3.7k managers, Aug 2026"
+    },
+    {
+      "chip": "wildcard", "event": 3, "kind": "planned", "weight": 0.104,
+      "basis": "10.4% go early, reacting to opening-weekend surprises before prices move.",
+      "source": "Fantasy Football Scout survey of ~3.7k managers, Aug 2026"
+    },
+    {
+      "chip": "wildcard", "event": 11, "kind": "expert", "weight": 0.10,
+      "basis": "Second international break. Suits holding the chip longer for a fixture-swing reset.",
+      "source": "RotoWire FPL chip strategy 2026/27"
+    },
+    {
+      "chip": "wildcard", "event": 16, "kind": "expert", "weight": 0.05,
+      "basis": "Late first-half reset before the GW19 expiry, targeting the festive fixture run.",
+      "source": "Pattern from prior seasons; first-half chips expire at the GW19 deadline"
+    },
+
+    {
+      "chip": "free_hit", "event": 3, "kind": "expert", "weight": 0.30,
+      "basis": "Standout fixture clash week — Arsenal vs Chelsea, City vs Coventry, Liverpool vs Ipswich. Sidesteps a squad conflict without a permanent transfer.",
+      "source": "RotoWire FPL chip strategy 2026/27"
+    },
+    {
+      "chip": "free_hit", "event": 4, "kind": "expert", "weight": 0.22,
+      "basis": "Manchester derby week; flagged by FPL as an early Free Hit window.",
+      "source": "Official FPL chip guidance; RotoWire 2026/27"
+    },
+    {
+      "chip": "free_hit", "event": 6, "kind": "expert", "weight": 0.18,
+      "basis": "Liverpool vs Manchester City — avoids permanent moves around a single awkward week.",
+      "source": "RotoWire FPL chip strategy 2026/27"
+    },
+    {
+      "chip": "free_hit", "event": 12, "kind": "expert", "weight": 0.20,
+      "basis": "Identified by FPL as the other early Free Hit window.",
+      "source": "Official FPL chip guidance 2026/27"
+    },
+    {
+      "chip": "free_hit", "event": 18, "kind": "expert", "weight": 0.10,
+      "basis": "Festive congestion and rotation, immediately before the first-half chips expire.",
+      "source": "Pattern from prior seasons"
+    },
+
+    {
+      "chip": "triple_captain", "event": 3, "kind": "expert", "weight": 0.28,
+      "basis": "Haaland at home to a promoted side, before Champions League minutes management begins.",
+      "source": "RotoWire FPL chip strategy 2026/27"
+    },
+    {
+      "chip": "triple_captain", "event": 7, "kind": "expert", "weight": 0.24,
+      "basis": "Haaland vs Ipswich straight after the international break.",
+      "source": "RotoWire FPL chip strategy 2026/27"
+    },
+    {
+      "chip": "triple_captain", "event": 16, "kind": "expert", "weight": 0.33,
+      "basis": "Described as the most enticing first-half spot — City vs Hull, who conceded the second-worst xG in the Championship.",
+      "source": "RotoWire FPL chip strategy 2026/27"
+    },
+    {
+      "chip": "triple_captain", "event": 12, "kind": "expert", "weight": 0.15,
+      "basis": "Mid-window premium fixture; a hedge for managers unwilling to hold to GW16.",
+      "source": "Pattern from prior seasons"
+    },
+
+    {
+      "chip": "bench_boost", "event": 24, "kind": "expert", "weight": 0.20,
+      "basis": "FA Cup fifth-round rescheduling has produced a major double here before — a record 2.68m chips were played in DGW24 last season.",
+      "source": "premierleague.com, FPL stats DGW24 (2025/26)"
+    },
+    {
+      "chip": "bench_boost", "event": 29, "kind": "expert", "weight": 0.15,
+      "basis": "Mid-run-in double window as quarter-final postponements are rescheduled.",
+      "source": "Historical blank/double pattern"
+    },
+    {
+      "chip": "bench_boost", "event": 33, "kind": "expert", "weight": 0.35,
+      "basis": "Bench Boost was the most-played chip in DGW33 last season, with 823k+ uses and six clubs playing twice.",
+      "source": "premierleague.com, most-popular chip in DGW33 (2025/26)"
+    },
+    {
+      "chip": "bench_boost", "event": 36, "kind": "expert", "weight": 0.30,
+      "basis": "Run-in double created by FA Cup final rescheduling; 2.38m chips were played in DGW37 the season before.",
+      "source": "Historical run-in double pattern, GW34-37"
+    },
+
+    {
+      "chip": "triple_captain", "event": 24, "kind": "expert", "weight": 0.22,
+      "basis": "Triple Captain is consistently among the most-played chips in a big double — 1.14m uses in the record DGW.",
+      "source": "premierleague.com, FPL stats DGW24 (2025/26)"
+    },
+    {
+      "chip": "triple_captain", "event": 33, "kind": "expert", "weight": 0.30,
+      "basis": "Used nearly twice as often as the Wildcard among the top 10k in DGW33.",
+      "source": "premierleague.com, most-popular chip in DGW33 (2025/26)"
+    },
+    {
+      "chip": "triple_captain", "event": 36, "kind": "expert", "weight": 0.28,
+      "basis": "Premium double in the run-in, the classic Triple Captain window.",
+      "source": "Historical run-in double pattern, GW34-37"
+    },
+    {
+      "chip": "triple_captain", "event": 29, "kind": "expert", "weight": 0.20,
+      "basis": "Earlier double for managers who prefer not to hold to the run-in.",
+      "source": "Historical blank/double pattern"
+    },
+
+    {
+      "chip": "free_hit", "event": 27, "kind": "expert", "weight": 0.25,
+      "basis": "Blank window around the cup fifth round — Free Hit fields a full XI for one week without reshaping the squad.",
+      "source": "Historical blank pattern; FA Cup scheduling"
+    },
+    {
+      "chip": "free_hit", "event": 32, "kind": "expert", "weight": 0.28,
+      "basis": "Semi-final blank; among the top 10k, 26.17% played Free Hit in the equivalent week last season.",
+      "source": "premierleague.com, DGW33 chip usage (2025/26)"
+    },
+    {
+      "chip": "free_hit", "event": 37, "kind": "expert", "weight": 0.32,
+      "basis": "FA Cup final blank — the most reliably thin gameweek of the run-in.",
+      "source": "Historical blank pattern, GW37"
+    },
+    {
+      "chip": "free_hit", "event": 24, "kind": "expert", "weight": 0.15,
+      "basis": "Alternative use of the chip to attack a double rather than cover a blank.",
+      "source": "Historical blank/double pattern"
+    },
+
+    {
+      "chip": "wildcard", "event": 28, "kind": "expert", "weight": 0.30,
+      "basis": "Classic run-in wildcard: load the squad with clubs holding doubles ahead, weeks before the doubles land.",
+      "source": "Community consensus on run-in wildcard timing"
+    },
+    {
+      "chip": "wildcard", "event": 30, "kind": "expert", "weight": 0.28,
+      "basis": "Same intent, later, once the rescheduled fixtures are actually confirmed.",
+      "source": "Community consensus on run-in wildcard timing"
+    },
+    {
+      "chip": "wildcard", "event": 34, "kind": "expert", "weight": 0.22,
+      "basis": "Final reshape to maximise the last doubles; the Wildcard is the least-played chip in a big double week itself.",
+      "source": "premierleague.com, DGW33 chip usage (2025/26)"
+    },
+    {
+      "chip": "wildcard", "event": 26, "kind": "expert", "weight": 0.20,
+      "basis": "Early second-half reset for squads damaged by winter injuries.",
+      "source": "Historical pattern"
+    }
+  ],
+
+  "outlooks": [
+    { "event": 24, "double": 0.55, "blank": 0.15, "note": "FA Cup fifth-round rescheduling; produced a record double last season." },
+    { "event": 25, "double": 0.30, "blank": 0.25, "note": "Knock-on week from fifth-round postponements." },
+    { "event": 26, "double": 0.20, "blank": 0.20, "note": "League Cup final weekend historically thins the fixture list." },
+    { "event": 27, "double": 0.25, "blank": 0.40, "note": "Cup weekend blank; a common Free Hit target." },
+    { "event": 28, "double": 0.35, "blank": 0.20, "note": "Quarter-final postponements begin to be rescheduled here." },
+    { "event": 29, "double": 0.45, "blank": 0.20, "note": "Mid-run-in double window." },
+    { "event": 30, "double": 0.30, "blank": 0.25, "note": "Depends on European progression." },
+    { "event": 31, "double": 0.25, "blank": 0.25, "note": "Transitional." },
+    { "event": 32, "double": 0.30, "blank": 0.45, "note": "FA Cup semi-final weekend — a reliable blank." },
+    { "event": 33, "double": 0.55, "blank": 0.20, "note": "Rescheduled semi-final casualties return; the biggest double of last season." },
+    { "event": 34, "double": 0.50, "blank": 0.20, "note": "Run-in doubles typically start here." },
+    { "event": 35, "double": 0.40, "blank": 0.25, "note": "Depends on European finalists." },
+    { "event": 36, "double": 0.50, "blank": 0.25, "note": "FA Cup final rescheduling creates a double." },
+    { "event": 37, "double": 0.35, "blank": 0.50, "note": "FA Cup final weekend — the most reliably thin week of the run-in." },
+    { "event": 38, "double": 0.05, "blank": 0.02, "note": "Final day: all 20 clubs play simultaneously by regulation." }
+  ]
+}

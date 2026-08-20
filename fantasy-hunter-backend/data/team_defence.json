@@ -1,0 +1,56 @@
+{
+  "source": "Premier League official club stats leaderboard (sdp-prem-prod.premier-league-prod.pulselive.com), fetched 2026-08-21",
+  "note": "Club-level defensive records. FPL's own API carries no club history — element-summary's history_past records a player's season totals but not which club he played for — so this cannot be derived from data we already hold. Promoted clubs legitimately have no rows.",
+  "seasons": [
+    {
+      "season_name": "2025/26",
+      "clubs": [
+        { "abbr": "ARS", "name": "Arsenal", "matches": 38, "clean_sheets": 19, "goals_conceded": 27, "expected_goals_conceded": 25.81 },
+        { "abbr": "MCI", "name": "Manchester City", "matches": 38, "clean_sheets": 16, "goals_conceded": 35, "expected_goals_conceded": 43.31 },
+        { "abbr": "CRY", "name": "Crystal Palace", "matches": 38, "clean_sheets": 12, "goals_conceded": 51, "expected_goals_conceded": 52.93 },
+        { "abbr": "BOU", "name": "Bournemouth", "matches": 38, "clean_sheets": 11, "goals_conceded": 54, "expected_goals_conceded": 51.02 },
+        { "abbr": "SUN", "name": "Sunderland", "matches": 38, "clean_sheets": 11, "goals_conceded": 48, "expected_goals_conceded": 46.83 },
+        { "abbr": "EVE", "name": "Everton", "matches": 38, "clean_sheets": 11, "goals_conceded": 50, "expected_goals_conceded": 52.77 },
+        { "abbr": "BRE", "name": "Brentford", "matches": 38, "clean_sheets": 10, "goals_conceded": 52, "expected_goals_conceded": 50.34 },
+        { "abbr": "BHA", "name": "Brighton and Hove Albion", "matches": 38, "clean_sheets": 10, "goals_conceded": 46, "expected_goals_conceded": 48.03 },
+        { "abbr": "LIV", "name": "Liverpool", "matches": 38, "clean_sheets": 10, "goals_conceded": 53, "expected_goals_conceded": 47.41 },
+        { "abbr": "CHE", "name": "Chelsea", "matches": 38, "clean_sheets": 9, "goals_conceded": 52, "expected_goals_conceded": 52.77 },
+        { "abbr": "AVL", "name": "Aston Villa", "matches": 38, "clean_sheets": 9, "goals_conceded": 49, "expected_goals_conceded": 52.10 },
+        { "abbr": "TOT", "name": "Tottenham Hotspur", "matches": 38, "clean_sheets": 9, "goals_conceded": 57, "expected_goals_conceded": 51.24 },
+        { "abbr": "FUL", "name": "Fulham", "matches": 38, "clean_sheets": 9, "goals_conceded": 51, "expected_goals_conceded": 45.24 },
+        { "abbr": "NFO", "name": "Nottingham Forest", "matches": 38, "clean_sheets": 9, "goals_conceded": 51, "expected_goals_conceded": 49.09 },
+        { "abbr": "NEW", "name": "Newcastle United", "matches": 38, "clean_sheets": 8, "goals_conceded": 55, "expected_goals_conceded": 51.05 },
+        { "abbr": "LEE", "name": "Leeds United", "matches": 38, "clean_sheets": 8, "goals_conceded": 56, "expected_goals_conceded": 52.31 },
+        { "abbr": "MUN", "name": "Manchester United", "matches": 38, "clean_sheets": 8, "goals_conceded": 50, "expected_goals_conceded": 53.55 },
+        { "abbr": "WHU", "name": "West Ham United", "matches": 38, "clean_sheets": 7, "goals_conceded": 65, "expected_goals_conceded": 58.55 },
+        { "abbr": "BUR", "name": "Burnley", "matches": 38, "clean_sheets": 4, "goals_conceded": 75, "expected_goals_conceded": 73.29 },
+        { "abbr": "WOL", "name": "Wolverhampton Wanderers", "matches": 38, "clean_sheets": 4, "goals_conceded": 68, "expected_goals_conceded": 59.82 }
+      ]
+    },
+    {
+      "season_name": "2024/25",
+      "clubs": [
+        { "abbr": "LIV", "name": "Liverpool", "matches": 38, "clean_sheets": 14, "goals_conceded": 41, "expected_goals_conceded": 43.12 },
+        { "abbr": "MCI", "name": "Manchester City", "matches": 38, "clean_sheets": 13, "goals_conceded": 44, "expected_goals_conceded": 47.39 },
+        { "abbr": "NEW", "name": "Newcastle United", "matches": 38, "clean_sheets": 13, "goals_conceded": 47, "expected_goals_conceded": 47.95 },
+        { "abbr": "ARS", "name": "Arsenal", "matches": 38, "clean_sheets": 13, "goals_conceded": 34, "expected_goals_conceded": 36.06 },
+        { "abbr": "NFO", "name": "Nottingham Forest", "matches": 38, "clean_sheets": 13, "goals_conceded": 46, "expected_goals_conceded": 50.55 },
+        { "abbr": "EVE", "name": "Everton", "matches": 38, "clean_sheets": 12, "goals_conceded": 44, "expected_goals_conceded": 50.03 },
+        { "abbr": "CHE", "name": "Chelsea", "matches": 38, "clean_sheets": 11, "goals_conceded": 43, "expected_goals_conceded": 45.40 },
+        { "abbr": "CRY", "name": "Crystal Palace", "matches": 38, "clean_sheets": 11, "goals_conceded": 51, "expected_goals_conceded": 53.14 },
+        { "abbr": "MUN", "name": "Manchester United", "matches": 38, "clean_sheets": 10, "goals_conceded": 54, "expected_goals_conceded": 54.59 },
+        { "abbr": "BOU", "name": "Bournemouth", "matches": 38, "clean_sheets": 9, "goals_conceded": 46, "expected_goals_conceded": 55.12 },
+        { "abbr": "AVL", "name": "Aston Villa", "matches": 38, "clean_sheets": 9, "goals_conceded": 51, "expected_goals_conceded": 52.52 },
+        { "abbr": "BRE", "name": "Brentford", "matches": 38, "clean_sheets": 8, "goals_conceded": 57, "expected_goals_conceded": 53.99 },
+        { "abbr": "WOL", "name": "Wolverhampton Wanderers", "matches": 38, "clean_sheets": 8, "goals_conceded": 69, "expected_goals_conceded": 60.23 },
+        { "abbr": "BHA", "name": "Brighton and Hove Albion", "matches": 38, "clean_sheets": 8, "goals_conceded": 59, "expected_goals_conceded": 52.25 },
+        { "abbr": "WHU", "name": "West Ham United", "matches": 38, "clean_sheets": 7, "goals_conceded": 62, "expected_goals_conceded": 58.69 },
+        { "abbr": "TOT", "name": "Tottenham Hotspur", "matches": 38, "clean_sheets": 6, "goals_conceded": 65, "expected_goals_conceded": 67.20 },
+        { "abbr": "FUL", "name": "Fulham", "matches": 38, "clean_sheets": 5, "goals_conceded": 54, "expected_goals_conceded": 49.14 },
+        { "abbr": "SOU", "name": "Southampton", "matches": 38, "clean_sheets": 3, "goals_conceded": 86, "expected_goals_conceded": 86.46 },
+        { "abbr": "LEI", "name": "Leicester City", "matches": 38, "clean_sheets": 3, "goals_conceded": 80, "expected_goals_conceded": 76.86 },
+        { "abbr": "IPS", "name": "Ipswich Town", "matches": 38, "clean_sheets": 2, "goals_conceded": 82, "expected_goals_conceded": 75.04 }
+      ]
+    }
+  ]
+}
