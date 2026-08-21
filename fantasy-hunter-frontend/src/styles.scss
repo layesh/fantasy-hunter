@@ -1,0 +1,418 @@
+/* Fantasy Hunter — global tokens and shared primitives.
+   Mobile-first: matchday usage is overwhelmingly phone-on-mobile-data, so the
+   base styles target small screens and widen at breakpoints. */
+
+:root {
+  --bg: #0f1116;
+  --surface: #171a21;
+  --surface-2: #1e222b;
+  --border: #272c37;
+  --text: #e8eaed;
+  --muted: #969db0;
+  --accent: #00d9a3;
+  --accent-dim: #0b6b56;
+  --warn: #ffb02e;
+  --danger: #ff4d6a;
+
+  /* Fixture difficulty, 1 (easiest) to 5 (hardest). */
+  --fdr-1: #0e8a5f;
+  --fdr-2: #1aa87a;
+  --fdr-3: #3f4552;
+  --fdr-4: #a83a53;
+  --fdr-5: #6f1030;
+
+  --radius: 10px;
+  --radius-sm: 6px;
+  --font: 'Segoe UI', system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif;
+  --mono: 'SF Mono', ui-monospace, 'Cascadia Mono', Consolas, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 15px;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0 0 0.4rem;
+  font-weight: 650;
+  letter-spacing: -0.01em;
+}
+
+h1 {
+  font-size: 1.35rem;
+}
+h2 {
+  font-size: 1.05rem;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.small {
+  font-size: 0.8rem;
+}
+
+.mono {
+  font-family: var(--mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* --- layout ------------------------------------------------------------ */
+
+.page {
+  padding: 1rem 0.85rem 3rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.page-head {
+  margin-bottom: 0.9rem;
+}
+
+.page-head p {
+  margin: 0.15rem 0 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+  max-width: 62ch;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.9rem;
+}
+
+.grid {
+  display: grid;
+  gap: 0.75rem;
+}
+
+@media (min-width: 760px) {
+  .page {
+    padding: 1.4rem 1.25rem 3rem;
+  }
+  .grid.cols-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid.cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* --- controls ---------------------------------------------------------- */
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: flex-end;
+  margin-bottom: 0.85rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.field label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+}
+
+input,
+select,
+button {
+  font-family: inherit;
+  font-size: 0.88rem;
+  color: var(--text);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.45rem 0.6rem;
+  min-height: 38px; /* comfortable touch target */
+}
+
+input:focus,
+select:focus,
+button:focus-visible {
+  outline: 2px solid var(--accent-dim);
+  outline-offset: 1px;
+}
+
+button {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button.primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #04150f;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.chips {
+  display: flex;
+  gap: 0.3rem;
+  flex-wrap: wrap;
+}
+
+.chip {
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  font-size: 0.82rem;
+  cursor: pointer;
+  min-height: 34px;
+}
+
+.chip.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #04150f;
+  font-weight: 650;
+}
+
+/* --- tables ------------------------------------------------------------ */
+
+/* Wide tables scroll inside their own container; the page never scrolls
+   sideways. */
+.table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  -webkit-overflow-scrolling: touch;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+th,
+td {
+  padding: 0.5rem 0.6rem;
+  text-align: right;
+  border-bottom: 1px solid var(--border);
+}
+
+th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: var(--surface-2);
+  color: var(--muted);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  user-select: none;
+}
+
+th.sortable {
+  cursor: pointer;
+}
+
+th.sortable:hover {
+  color: var(--text);
+}
+
+td.name,
+th.name {
+  text-align: left;
+}
+
+/* Keep the player name visible while scrolling the gameweek columns. */
+.sticky-col {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background: var(--surface);
+}
+
+th.sticky-col {
+  z-index: 3;
+  background: var(--surface-2);
+}
+
+tbody tr:hover td {
+  background: var(--surface-2);
+}
+
+tbody tr:hover td.sticky-col {
+  background: var(--surface-2);
+}
+
+tbody tr.selected td {
+  background: #12241f;
+}
+
+/* --- difficulty cells --------------------------------------------------- */
+
+.fdr {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 46px;
+  padding: 0.22rem 0.35rem;
+  border-radius: var(--radius-sm);
+  color: #fff;
+  font-size: 0.78rem;
+  line-height: 1.25;
+}
+
+.fdr small {
+  font-size: 0.66rem;
+  opacity: 0.85;
+}
+
+.fdr-1 {
+  background: var(--fdr-1);
+}
+.fdr-2 {
+  background: var(--fdr-2);
+}
+.fdr-3 {
+  background: var(--fdr-3);
+}
+.fdr-4 {
+  background: var(--fdr-4);
+}
+.fdr-5 {
+  background: var(--fdr-5);
+}
+
+.blank {
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+/* --- badges & states ---------------------------------------------------- */
+
+.pos {
+  display: inline-block;
+  min-width: 34px;
+  text-align: center;
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  color: var(--muted);
+}
+
+.pos-GKP {
+  color: #ffd166;
+}
+.pos-DEF {
+  color: #4cc9f0;
+}
+.pos-MID {
+  color: #80ed99;
+}
+.pos-FWD {
+  color: #ff8fab;
+}
+
+.flag {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-left: 0.35rem;
+  vertical-align: middle;
+}
+
+.flag-d {
+  background: var(--warn);
+}
+.flag-i,
+.flag-s,
+.flag-u,
+.flag-n {
+  background: var(--danger);
+}
+
+.notice {
+  padding: 0.8rem 0.9rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--muted);
+  font-size: 0.87rem;
+  line-height: 1.5;
+}
+
+.notice.warn {
+  border-color: #6a4a12;
+  background: #211a0c;
+  color: #f2d089;
+}
+
+.notice.error {
+  border-color: #6a1f2e;
+  background: #210f14;
+  color: #ffb3c0;
+}
+
+.spinner {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 2px solid var(--border);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  vertical-align: -2px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.bar {
+  height: 6px;
+  border-radius: 3px;
+  background: var(--surface-2);
+  overflow: hidden;
+}
+
+.bar > span {
+  display: block;
+  height: 100%;
+  background: var(--accent);
+}

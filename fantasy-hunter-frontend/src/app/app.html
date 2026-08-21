@@ -1,0 +1,39 @@
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" routerLink="/predictions">
+      <span class="brand-mark">FH</span>
+      <span class="brand-name">Fantasy Hunter</span>
+    </a>
+
+    @if (nextEvent(); as event) {
+      <div class="deadline">
+        <span class="muted small">{{ event.name }} deadline</span>
+        <strong class="small">{{ formatDeadline(event.deadline_time) }}</strong>
+      </div>
+    }
+  </div>
+
+  <nav class="tabs">
+    @for (item of nav; track item.path) {
+      <a
+        [routerLink]="item.path"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: false }"
+        >{{ item.label }}</a
+      >
+    }
+  </nav>
+</header>
+
+@if (offline()) {
+  <div class="page">
+    <div class="notice error">
+      <strong>Cannot reach the API.</strong> Start the backend, then reload:
+      <code class="mono">python -m uvicorn app.main:app --port 8420</code>
+    </div>
+  </div>
+} @else {
+  <main>
+    <router-outlet />
+  </main>
+}
