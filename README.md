@@ -354,3 +354,15 @@ fewer chips.
   page map, frontend conventions, and the deliberate empty states.
 - [`plan.md`](plan.md) — product strategy, competitive landscape, and the target
   cloud architecture.
+
+---
+
+## License and disclaimer
+
+Released under the [MIT License](LICENSE) — use it, fork it, build on it.
+
+This is an unofficial, independent project. It is not affiliated with,
+endorsed by, or connected to the Premier League or Fantasy Premier League.
+Player, fixture, and price data is read from the public FPL API and remains the
+property of its owners. Predictions are estimates from a model, not advice —
+your transfers are your own.
